@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Paper: ML Models in Web Applications</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .badge-primary {
+      background-color: #e0e7ff;
+      color: #3730a3;
+    }
+    .badge-secondary {
+      background-color: #f1f5f9;
+      color: #475569;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-600 text-white font-bold text-lg">
+          ML
+        </span>
+        <span class="font-bold text-slate-900 tracking-tight text-sm sm:text-base">WebML Review</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-indigo-600 transition-colors">Isi Paper</a>
+        <a href="#strengths" class="hover:text-indigo-600 transition-colors">Kekuatan</a>
+        <a href="#weaknesses" class="hover:text-indigo-600 transition-colors">Kelemahan</a>
+        <a href="#metadata" class="hover:text-indigo-600 transition-colors">Metadata</a>
+      </nav>
+      <a href="#about" class="inline-flex items-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition-colors shadow-sm">
+        Eksplorasi Ringkasan
+      </a>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-indigo-50/60 via-white to-slate-50 pt-16 pb-20 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold badge-primary mb-6">
+        <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+        ICT Express (Elsevier, 2025)
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+        Machine Learning Models in Web Applications: <span class="text-indigo-600">A Comprehensive Review</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-3xl">
+        Kajian komprehensif mengenai strategi integrasi machine learning pada arsitektur web modern, perbandingan framework backend, peningkatan Web Application Firewall (WAF), serta alur kerja MLOps dan keamanan siber adaptif.
+      </p>
+
+      <!-- Metadata Box -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm text-sm">
+        <div>
+          <span class="text-xs font-medium text-slate-400 uppercase tracking-wider block">Penulis</span>
+          <span class="font-semibold text-slate-800">Kshiteesh Mani & Ajitha K.B. Shenoy</span>
+        </div>
+        <div>
+          <span class="text-xs font-medium text-slate-400 uppercase tracking-wider block">Afiliasi</span>
+          <span class="font-semibold text-slate-800">Manipal Institute of Technology, MAHE</span>
+        </div>
+        <div>
+          <span class="text-xs font-medium text-slate-400 uppercase tracking-wider block">Publikasi / Penerbit</span>
+          <span class="font-semibold text-slate-800">ICT Express, Vol. 11 (Elsevier)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Substansi Penelitian</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-1">Apa yang Dibahas dalam Paper?</h2>
+      <p class="text-slate-600 text-sm sm:text-base mt-3">
+        Paper ini membedah empat pilar utama integrasi machine learning dalam ekosistem aplikasi web modern.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1: Backend Stack -->
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold mb-4">
+          01
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Python vs Node.js Stack</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Analisis perbandingan backend untuk inferensi model:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span><strong>Python (Flask, Django):</strong> Raja ekosistem data science, kaya pustaka (Scikit-Learn, PyTorch, Keras), ideal untuk model kompleks dan microservice terpisah.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span><strong>Node.js (TensorFlow.js, Brain.js):</strong> Arsitektur non-blocking asynchronous yang unggul dalam I/O latency rendah, unified full-stack JS, cocok untuk inferensi ringan real-time.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card 2: ML-WAF -->
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold mb-4">
+          02
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">ML & DL pada WAF (Firewall)</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Transformasi Web Application Firewall dari rule berbasis signature ke AI adaptif:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span>Deteksi anomali HTTP traffic (analisis n-gram karakter, TF-IDF, panjang request, dan entropy).</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span>Penggunaan SVM, Random Forest, CNN, dan Autoencoder untuk memitigasi SQL Injection (SQLi), Cross-Site Scripting (XSS), dan zero-day payload.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card 3: MLOps -->
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold mb-4">
+          03
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">MLOps & Arsitektur Deployment</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Tantangan menjembatani fase riset data science ke produksi web:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span>Kontainerisasi dengan <strong>Docker</strong> dan orkestrasi via <strong>Kubernetes</strong> guna auto-scaling inferensi model.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span>Pipeline <strong>CI/CD</strong> terintegrasi, penanganan data drift, serta pemeliharaan zero-downtime serving.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Studi Kasus Industri -->
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold mb-4">
+          04
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Studi Kasus & Tren Industri</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Implementasi di skala enterprise nyata:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span><strong>Google Cloud Armor:</strong> Penerapan model ML untuk mitigasi serangan DDoS dan layer-7 otomatis.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span><strong>Netflix Foundation Model:</strong> Personalisasi konten multi-modal secara berskala global.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">•</span>
+            <span><strong>Federated Learning:</strong> Menjaga privasi data pengguna tanpa mentransfer data mentah ke cloud.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="strengths" class="py-20 bg-slate-100/70 border-t border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Nilai Tambah</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-1">Kekuatan Paper (Strengths)</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Aspek-aspek unggul yang membuat tinjauan literatur ini berharga bagi pengembang dan peneliti keamanan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold mb-4">
+            ✓
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Perspektif Ganda Terpadu</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Tidak hanya mengupas sisi <em>software engineering</em> (backend, framework web), tetapi juga mengintegrasikannya dengan pilar <em>cybersecurity</em> (WAF, deteksi intrusi web).
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold mb-4">
+            ✓
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Perbandingan Stack Realistis</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Menganalisis Python vs Node.js secara objektif sesuai trade-off: kematangan ekosistem analitik Python vs efisiensi konkurensi event-driven Node.js.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold mb-4">
+            ✓
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Relevansi Industri & MLOps</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Membawa pembaca melampaui teori akademik dengan menyoroti praktik MLOps, CI/CD, kontainerisasi, serta arsitektur cloud enterprise.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="weaknesses" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-wider text-rose-600">Evaluasi Kritis</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-1">Kelemahan & Limitasi Paper</h2>
+      <p class="text-slate-600 text-sm sm:text-base mt-3">
+        Ruang evaluasi dan batasan metode yang ditemukan dalam paper untuk pertimbangan riset lanjutan.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-rose-100 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold mb-4">
+          !
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Kompilasi Sekunder Murni</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Paper ini murni berupa <em>systematic literature review</em> tanpa menyajikan eksperimen laboratorium independen, implementasi prototipe baru, atau dataset uji orisinal.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-rose-100 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold mb-4">
+          !
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Minim Benchmark Kuantitatif</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Tidak ada data komparasi numerik langsung <em>head-to-head</em> (misal: RPS, latency p99, memory footprint) antara Python (WSGI/ASGI) dan Node.js pada beban inferensi identik.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-rose-100 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold mb-4">
+          !
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Solusi Adversarial Belum Tuntas</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Serangan adversarial terhadap WAF (seperti <em>GenXSS</em> dan <em>AdvSQLi</em>) baru diposisikan sebagai tantangan terbuka di masa depan tanpa rekomendasi mekanisme mitigasi konkret.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="metadata" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">Kesimpulan Ringkas</span>
+      <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 tracking-tight">
+        Panduan Memilih Antara Python dan Node.js untuk Web ML
+      </h2>
+      <p class="text-slate-300 text-sm leading-relaxed mb-8 max-w-2xl mx-auto">
+        Gunakan <strong>Python</strong> saat membutuhkan ekosistem training yang matang, model deep learning berat, atau arsitektur microservices. Pilih <strong>Node.js</strong> ketika aplikasi membutuhkan throughput I/O tinggi, event-driven streaming, dan inferensi ringan on-the-fly.
+      </p>
+      <div class="inline-flex flex-wrap justify-center gap-3">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-800 border border-slate-700 text-slate-300">DOI: 10.1016/j.icte.2025.09.001</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-800 border border-slate-700 text-slate-300">Open Access (CC BY)</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-800 border border-slate-700 text-slate-300">Elsevier 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 bg-slate-950 text-slate-500 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Academic Paper Review Landing Page. Dibuat untuk tujuan edukasi & telaah literatur.</p>
+      <p>Sumber: Mani & Shenoy (ICT Express, Elsevier).</p>
+    </div>
+  </footer>
+
+</body>
+</html>
